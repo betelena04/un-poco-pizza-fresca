@@ -212,7 +212,7 @@ a {
 
 /* Ingredients section */
 .ingredients-section {
-    background-image: url(/images/ingredients-bg.jpg);
+    background-image: url("../images/ingredients-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
