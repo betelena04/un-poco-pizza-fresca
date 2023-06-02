@@ -1,0 +1,100 @@
+.flour-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.olive-img {
+    background-image: url(/images/olive-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    margin-top: -5vh;
+}
+
+.flour-card{
+    background-image: url(/images/flour-bg.jpg);
+    background-size: cover;
+    width: 75%;
+    height: 85vh;
+    box-shadow: 0 5px 150px #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flour-text {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    max-width: 100%;
+    margin-left: -30vw;
+}
+
+.flour-text h1 {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.flour-text h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+@media(min-width: 700px) {
+    .flour-text {
+        max-width: 80%;
+    }
+}
+
+@media(min-width: 970px) {
+    .flour-text {
+        max-width: 60%;
+        text-align: left;
+        margin-left: -50vh;
+    }
+
+    .flour-text h1 {
+        font-size: 70px;
+        line-height: 77px;
+    }
+
+    .flour-text h2 {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .olive-img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .flour-text {
+        margin-left: -90vh;
+    }
+
+    .flour-text h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .flour-text h2 {
+        font-size: 30px;
+    }
+
+    .olive-img {
+        width: 260px;
+        height: 260px;
+    }
+}

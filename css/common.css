@@ -1,0 +1,294 @@
+:root {
+    --yellow: #FFC64C;
+    --border-color: #d5d5d5;
+    --primary-color: #ffff;
+    --secondary-color: rgb(0, 0, 0);
+    --pink: #f9f9f9;
+    --text: #4d443d;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Navbar */
+    .intro {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99900;
+        background-color: #4d443d;
+        opacity: 0.99;
+    }
+
+    .nav-container {
+        margin: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+/*Logo */
+    .site-logo {
+        width: 102px;
+        height: 50px;
+    }
+
+    .logo-styling img {
+        max-width: 100%;
+    }
+
+
+/* Video */
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+}
+
+/* Hamburger menu */
+.hamburger {
+    cursor: pointer;
+    width: 22px;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    height: 3px;
+    background: var(--primary-color);
+    transition: all 0.25s linear;
+    border-radius: 5px;
+}
+
+.hamburger-middle,
+.hamburger-bottom {
+    margin-top: 3px;
+}
+
+/* Mobile menu */
+
+.mobile-main-menu {
+    position: fixed;
+    top: 77px;
+    right: 0;
+    width: 100%;
+    height:60vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: #4d443d;
+}
+
+.mobile-main-menu ul {
+    width: 100%;
+    color: var(--primary-color);
+}
+
+.mobile-main-menu ul li {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+
+.mobile-main-menu ul li a {
+    color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+}
+
+.hide-on-mobile-version {
+    display: none;
+}
+
+/* Intro text */
+.intro-text {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.intro-text h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-text h4 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.intro-btn {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: var(--primary-color);
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.menu-btn {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.intro-btn a {
+    color: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+}
+
+.intro-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.intro-btn a:hover {
+    color: var(--primary-color);
+}
+
+/* Transition Hamburger to X when open */
+.open .hamburger-top {
+    transform-origin: bottom center;
+    transform: rotate(140deg) translateY(-4px);
+}
+
+.open .hamburger-middle {
+    transform: translateY(-90deg);
+    opacity: 0;
+    transform: translateX(-35px);
+}
+
+.open .hamburger-bottom {
+    transform-origin: top center;
+    transform: rotate(-140deg) translateY(5px);
+}
+
+.show {
+    display: flex;
+}
+
+/* Ingredients section */
+.ingredients-section {
+    background-image: url(/images/ingredients-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* -----Media Queries ----- */
+
+@media(min-width: 435px) {
+    .mobile-main-menu{
+        top: 75px;
+        height: 234px;
+    }
+}
+
+@media(min-width: 760px) {
+    .intro-text h1 {
+        font-size: 60px;
+    }
+
+    .intro-text h4 {
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 900px) {
+    .intro {
+        height: 120vh;
+    }
+}
+
+@media(min-width: 970px) {
+    .nav-container {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+ @media(min-width: 1025px) {
+    .mobile-main-menu {
+        display: flex;
+        position: relative;
+        top: unset;
+        right: unset;
+        height: unset;
+        width: fit-content;
+    }
+
+    .mobile-main-menu ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .mobile-main-menu ul li {
+        margin-bottom: 0;
+        padding: 16px;
+        display: flex;
+    }
+
+    .first-items-in-ul {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+    .intro-text h1 {
+        font-size: 90px;
+    }
+
+    .intro-text h4 {
+        font-size: 25px;
+    }
+
+ }

@@ -1,0 +1,9 @@
+.tomate-section.mozzarella {
+    margin-top: 100px;
+    position: relative;
+}
+
+.tomato-leaves.mozzarella {
+    background-image: url(/images/mozzarella.png);
+    top: -85px;
+}

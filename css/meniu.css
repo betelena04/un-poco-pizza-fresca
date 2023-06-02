@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-intro {
+    height: 75vh;
+    min-height: 500px;
+    background-image: url(/images/tomato-bg.jpg);
+    background-size: cover;
+    box-shadow: 0 5px 150px #000;
+    color: #4d443d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .menu-intro-text {
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 90%;
+    line-height: 1;
+    margin-top: 40px;
+    padding: 0px 40px;
+    z-index: 5000;
+  }
+  
+  .menu-intro-text h1 {
+    font-size: 65px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .menu-intro-text p {
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+.menu-intro-icon {
+  background-image: url(/images/olive-icon.png);
+  background-size: cover;
+  position: absolute;
+  top: auto;
+  bottom: -30%;
+  height: 90vh;
+  width: 45%;
+  right: 0;
+}
+
+/* Meniu */
+.section {
+  height: 25vh;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section1 {
+  background-image: url(/images/meniu-intro1.webp);
+}
+
+#section2 {
+  background-image: url(/images/meniu-intro2.webp);
+}
+
+#section3 {
+  background-image: url(/images/meniu-intro3.webp);
+}
+
+/*Meniu content */
+.meniu-section {
+  padding: 5% 0%;
+}
+
+.meniu-content {
+  margin: 50px 5%;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  color: #4d443d;
+}
+
+.pizza-titlu {
+  border-bottom: 2px solid #4d443d;
+}
+
+.pizza-titlu h1 {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.detalii {
+  margin-top: 40px;
+}
+
+.detalii li {
+  margin-bottom: 50px;
+}
+
+.item p.item-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.item p {
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;;
+}
+
+.item span {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.item-img {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 500px;
+}
+
+.margherita {
+  background-image: url(/images/margherita.webp);
+}
+
+.m-bufala {
+  background-image: url(/images/bufala.webp);
+}
+
+.capriciosa {
+  background-image: url(/images/capriciosa.webp);
+}
+
+.fuoco {
+  background-image: url(/images/fuoco.webp);
+}
+
+.tonno {
+  background-image: url(/images/tonno.webp);
+}
+
+.burrata {
+  background-image: url(/images/burrata.webp);
+}
+
+.roma {
+  background-image: url(/images/roma.webp);
+}
+
+.giardino {
+  background-image: url(/images/giardino.webp);
+}
+
+.marinara {
+  background-image: url(/images/marinara.webp);
+}
+
+.q-formaggi {
+  background-image: url(/images/1-formaggi.webp);
+}
+
+.prosciutto {
+  background-image: url(/images/prosciutto.webp);
+}
+
+.salami {
+  background-image: url(/images/salami.webp);
+}
+
+.rusticana {
+  background-image: url(/images/rusticana.webp);
+}
+
+.mortadela {
+  background-image: url(/images/mortadela.webp);
+}
+
+.amore {
+  background-image: url(/images/amore.webp);
+}
+
+.dolce {
+  background-image: url(/images/dolce.webp);
+}
+
+/*Media Queries */
+
+@media(min-width: 460px) {
+  .meniu-content {
+    margin: 50px 10%;
+  }
+
+  .pizza-titlu h1 {
+    font-size: 36px;
+  }
+
+  .item p.item-title {
+    font-size: 24px;
+  }
+
+  .item p {
+    font-size: 18px;
+  }
+
+  .item-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media(min-width: 760px) {
+  .menu-intro {
+    justify-content: flex-start;
+    padding: 0px 50px;
+  }
+
+  .menu-intro-text {
+    text-align: left;
+  }
+
+  .menu-intro-text h1  {
+    font-size: 85px;
+    width: 500px;
+  }
+
+  .menu-intro-text p {
+    font-size: 22px;
+    margin: unset;
+    width: 500px;
+  }
+
+  .pizza-titlu h1 {
+    font-size: 50px;
+  }
+
+}
+
+.section {
+    height: 40vh;
+    display: flex;
+    background-attachment: fixed;
+}
+
+@media(min-width: 960px) {
+  .meniu-content {
+    margin: 50px 5%;
+  }
+
+  .item-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .item {
+    width: 55%;
+  }
+
+  .item p,
+  .item span {
+    line-height: 1.2;
+  }
+}
+
+@media(min-width: 1200px) {
+  .menu-intro {
+    padding: 0px 100px;
+  }
+
+  .menu-intro-text {
+    padding: 0px 100px;
+  }
+
+  .menu-intro-icon {
+    height: 70vh;
+    bottom: -15%;
+  }
+
+  
+  .meniu-section {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1400px;
+  }
+
+  .detalii ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 50px;
+  }
+
+  .detalii li {
+    margin-bottom: 50px;
+  }
+
+  .pizza-titlu h1 {
+    font-size: 70px;
+  }
+
+  .item {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .item p.item-title {
+    font-size: 30px;
+  }
+
+  .item p {
+    font-size: 24px;
+  }
+
+  .item span {
+    font-size: 22px;
+  }
+
+  .custom-dolce {
+    width: 80%;
+    margin-bottom: 87px;
+  }
+}
+
+@media(min-width:1400px) {
+  .menu-intro-text {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+
+  .menu-intro-text h1 {
+    font-size: 110px;
+    width: 90%;
+  }
+
+  .menu-intro-text p {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .menu-intro-icon {
+    width: 30%;
+    
+  }
+
+}

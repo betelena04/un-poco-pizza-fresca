@@ -1,0 +1,147 @@
+.tomate-section {
+    max-width: 1400px;
+    height: 50vh;
+    margin-top: -3vh;
+    background-image: url(/images/tomato-bg.jpg);
+    padding: 100px 30px;
+    text-align: center;
+}
+
+
+.tomato-leaves {
+    height: 178px;
+    width: 150px;
+    position: absolute;
+    top: -4%;
+    right: 0;
+    z-index: 1; 
+    background-image: url(/images/cut-tomato-leaves.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tomate-text h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.tomate-text h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.tomato-container{
+    width: 110px;
+    height: 95px;
+}
+
+
+/*Media Queries */
+
+@media(min-width: 450px) {
+    .tomate-text{
+       margin: 0 auto;
+       width: 50%;
+    }
+
+    .tomato-container {
+        position: unset;
+    }
+}
+
+@media(min-width: 700px) {
+    .tomate-section {
+        width: 80%;
+        position: relative;
+    }
+
+    .tomato-leaves {
+        background-image: url(/images/tomato-leaves-700px.png);
+        width: 430px;
+        height: 350px;
+        right: -80px;
+        top: -140px;
+    }
+
+    .tomate-text {
+        text-align: left;
+        margin-left: 20px;
+        position: absolute;
+        top: 30%;
+    }
+
+    .tomato-container {
+        position: absolute;
+        left: 150px;
+        top: 65%;
+    }
+}
+
+@media(min-width: 970px) {
+    .tomate-section {
+        width: 70%;
+        height: 50vh;
+        margin-top: -22vh;
+    }
+
+    .ingredients-section {
+        position: unset;
+    }
+
+    .tomato-container {
+        top: 80%;
+        margin-left: 25%;
+    }
+
+    .tomato-leaves {
+        right: -170px;
+        top: -20%;
+    }
+
+    .tomate-text h1 {
+        font-size: 70px;
+        line-height: 77px;
+    }
+
+    .tomate-text h2 {
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .tomate-section {
+        width: 80%;
+    }
+
+    .tomate-text {
+        width: 600px;
+        top: unset;
+        position: unset;
+        margin-left: 21%;
+    }
+    
+    .tomate-text h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .tomate-text h2 {
+        font-size: 30px;
+    }
+
+    .tomato-container {
+        width: 160px;
+        height: 140px;
+        top: 75%;
+    }
+}
