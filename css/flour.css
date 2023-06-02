@@ -7,7 +7,7 @@
 }
 
 .olive-img {
-    background-image: url(/images/olive-icon.png);
+    background-image: url("../images/olive-icon.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 120px;
@@ -16,7 +16,7 @@
 }
 
 .flour-card{
-    background-image: url(/images/flour-bg.jpg);
+    background-image: url("../images/flour-bg.jpg");
     background-size: cover;
     width: 75%;
     height: 85vh;
